@@ -9,10 +9,12 @@ def insertion_sort(arr: List[int]) -> List[int]:
     for i in range(1, len(arr)):
         current = arr[i]
         pre_index = i - 1
-        while pre_index >= 0 and current < arr[pre_index]:#比current大的元素全部后移一位
+        # 比current大的元素全部后移一位
+        while pre_index >= 0 and current < arr[pre_index]:
             arr[pre_index + 1] = arr[pre_index]
             pre_index -= 1
-        arr[pre_index + 1] = current#在空位插入current
+        # 在空位插入current
+        arr[pre_index + 1] = current
 
     return arr
 
