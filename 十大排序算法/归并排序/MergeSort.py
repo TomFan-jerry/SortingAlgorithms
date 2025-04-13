@@ -5,6 +5,7 @@
 # 4.重复步骤 3 直到某一个指针达到序列尾。
 # 5.将另一序个列剩下的所有元素直接复制到合并序列尾。
 
+
 from typing import List
 
 def merge_sort(arr: List[int]) -> List[int]:
